@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fullpage{
+    border: 2px solid black;
+}
+.header{
+    border: 1px solid red;
+    /* height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+.navbarOne{
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    border: 1px solid black;
+}
+.navbarTwo{
+    /* text-align: center; */
+    width: 80%;
+    margin: auto;
+    font-size: 30px;
+    border: 1px solid black;
+}
+.homeIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.body{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+.sectionOne{
+    border: 1px solid red;
+    width: 24%;
+    height: 350px;
+}
+.sectionTwo{
+    border: 1px solid red;
+    height: 350px;
+    width: 24%;
+}
+.sectionThree{
+    border: 1px solid red;
+    height: 350px;
+    width: 24%;
+}
+.sectionFour{
+    border: 1px solid red;
+    height: 350px;
+    width: 24%;
+}
+.footer{
+    height: 250px;
+    border: 1px solid blue;
+}
+
+@media screen and (max-width: 500px){
+    .headerTwo{
+        /* width: 50%; */
+    }
+    .body{
+        display: block;
+    }
+    .sectionOne, .sectionFour, .sectionThree, .sectionTwo{
+        width: 80%;
+        background-color: orange;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .sectionOne, .sectionFour, .sectionThree, .sectionTwo{
+        width: 35%;
+        margin: auto;
+        background-color: orchid;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .body{
+       display: block;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .sectionOne, .sectionFour, .sectionThree, .sectionTwo{
+        width: 30%;
+        margin: auto;
+    }
+} 
+
